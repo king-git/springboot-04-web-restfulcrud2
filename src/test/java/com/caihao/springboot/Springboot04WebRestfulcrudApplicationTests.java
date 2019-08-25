@@ -11,6 +11,7 @@ public class Springboot04WebRestfulcrudApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		System.err.println("nGADSAD");
 	}
 
 }

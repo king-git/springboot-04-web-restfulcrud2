@@ -16,6 +16,10 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<!--<thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>-->
+		<!--布局功能的支持依赖，thymeleaf3主程序 支持layout2以上的版本-->
+		<!--thymeleaf 2 和  layout 1  适配-->
+		<!--<thymeleaf-layout-dialect.version>2.1.1</thymeleaf-layout-dialect.version>-->
 	</properties>
 
 	<dependencies>

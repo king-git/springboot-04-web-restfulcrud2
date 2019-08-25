@@ -9,6 +9,7 @@ public class Department {
 	}
 	
 	public Department(int i, String string) {
+		super();
 		this.id = i;
 		this.departmentName = string;
 	}

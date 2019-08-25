@@ -18,7 +18,6 @@ public class HelloController {
     @ResponseBody
     @RequestMapping("/hello")
     public String hello(){
-
         return "hello world!";
     }
 
@@ -28,6 +27,9 @@ public class HelloController {
         map.put("hello","你好！");
         return "success";
     }
+
+
+
 
    /*
     //经过模板引擎重定义首页
