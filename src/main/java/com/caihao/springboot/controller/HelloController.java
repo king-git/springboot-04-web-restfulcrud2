@@ -1,7 +1,9 @@
 package com.caihao.springboot.controller;
 
+import com.caihao.springboot.exception.UserNoException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.HashMap;
@@ -28,6 +30,17 @@ public class HelloController {
         return "success";
     }
 
+
+    @ResponseBody
+    @RequestMapping("/hello2")
+    public String hello2(@RequestParam("user") String user){
+
+        if(user.equals("aaa")){
+            //抛出自定义的异常
+            throw new UserNoException();
+        }
+        return "hello world!";
+    }
 
 
 
